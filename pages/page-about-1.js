@@ -4,6 +4,7 @@ import CounterUp from "../components/elements/CounterUp";
 import Layout from "../components/layout/Layout";
 import TeamSlider from "../components/slider/Team";
 import TestimonialSlider from "../components/slider/Testimonial";
+import HeroOne from "../components/layout/HeroOne";
 
 function About1() {
     // Open modal
@@ -18,6 +19,78 @@ function About1() {
     return (
         <>
             <Layout>
+
+
+            <HeroOne />
+            <section className="section-box">
+                        <div className="container mt-80">
+                            <div className="row">
+                                <div className="col-lg-6 col-sm-12 mb-30">
+                                    <span className="tag-1 bg-6 color-green-900">Built Exclusively For You</span>
+                                    <h3 className="text-heading-1 mt-30">
+                                        From the big picture to every tiny detail, we
+                                        got you covered.
+                                    </h3>
+                                    <p className="text-body-lead-large color-gray-600 mt-30">
+                                        Necessary to deliver white glove, fully managed
+                                        campaigns that surpass industry benchmarks.Take
+                                        your career to next level. Apply to our team and
+                                        see what we can do together. You’re good
+                                        enough.
+                                    </p>
+                                    <div className="line-bd-green mt-50" />
+                                    <div className="row">
+                                        <div className="col-lg-6 col-sm-6 col-12 mt-50">
+                                            <h4 className="text-heading-6 icon-leaf">
+                                                Automated reports
+                                            </h4>
+                                            <p className="text-body-excerpt color-gray-600 mt-15">
+                                                The latest design trends meet
+                                                hand-crafted templates.
+                                            </p>
+                                        </div>
+                                        <div className="col-lg-6 col-sm-6 col-12 mt-50">
+                                            <h4 className="text-heading-6 icon-leaf">
+                                                Realtime analytics
+                                            </h4>
+                                            <p className="text-body-excerpt color-gray-600 mt-15">
+                                                The latest design trends meet
+                                                hand-crafted templates.
+                                            </p>
+                                        </div>
+                                        <div className="col-lg-6 col-sm-6 col-12 mt-50">
+                                            <h4 className="text-heading-6 icon-leaf">
+                                                Funnel optimization
+                                            </h4>
+                                            <p className="text-body-excerpt color-gray-600 mt-15">
+                                                The latest design trends meet
+                                                hand-crafted templates.
+                                            </p>
+                                        </div>
+                                        <div className="col-lg-6 col-sm-6 col-12 mt-50">
+                                            <h4 className="text-heading-6 icon-leaf">
+                                                User journey
+                                            </h4>
+                                            <p className="text-body-excerpt color-gray-600 mt-15">
+                                                The latest design trends meet
+                                                hand-crafted templates.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 col-sm-12 block-we-do">
+                                    <div className="inner-image">
+                                        <img className="bdrd-16 img-responsive" src="assets/imgs/page/homepage2/img-built.png" alt="Agon" />
+                                        <div className="block-image-bottom">
+                                            <img className="bdrd-16 img-responsive" src="assets/imgs/page/homepage2/img-built-2.png" alt="Agon" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
                 <section className="section-box">
                     <div className="banner-hero banner-2 bg-about-1">
                         <div className="container">

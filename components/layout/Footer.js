@@ -5,164 +5,61 @@ import Image from 'next/image';
 const Footer = () => {
     return (
         <>
-            <footer className="footer mt-50">
+            <footer className="footer footer-top mt-50">
                 <div className="container">
-                    <div className="footer-top">
-                        <div className="row">
-                            <div className="col-md-4 col-sm-6 text-center text-md-start">
-                                <Link href="/" legacyBehavior>
-                                    <a>
-                                        {/* <img alt="Agon" src="/assets/imgs/template/logo.svg" /> */}
-                                        <Image src="/assets/imgs/template/logo.svg" alt="Agon" width={162} height={42}/>
-                                    </a>
-                                </Link>
-                            </div>
-                            <div className="col-md-8 col-sm-6 text-center text-md-end">
-                                <span className="color-gray-900 text-heading-6 mr-30 text-mb-sm-20">Ready to get started?</span>
-                                <Link href="/page-signup" legacyBehavior>
-                                    <a className="btn btn-square">Create an Account</a>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
                     <div className="row">
-                        <div className="col-lg-3 width-20 mb-30">
+                        <div className="col-lg-4 mb-30">
                             <h4 className="text-heading-5">Contact</h4>
-                            <div className="mt-20 text-body-text color-gray-600 mb-20">4517 Washington Ave. Manchester, Kentucky 39495</div>
-                            <div className="mt-20 text-body-text color-gray-600">(239) 555-0108</div>
-                            <div className="text-body-text color-gray-600">contact@agon.com</div>
+                            <div className="mt-20 text-body-text color-gray-600 mb-20">address</div>
+                            <div className="mt-20 text-body-text color-gray-600">contact number</div>
+                            <div className="text-body-text color-gray-600">email@address.com</div>
                         </div>
-                        <div className="col-lg-3 width-20 mb-30">
+                        <div className="col-lg-2 mb-30">
                             <h4 className="text-heading-5">About Us</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
                                     <Link href="/#" legacyBehavior>
-                                        <a>Mission and Vision</a>
+                                        <a>Our Story</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/#" legacyBehavior>
-                                        <a>Our Team</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/page-career" legacyBehavior>
-                                        <a>Careers</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Press and Media</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Advertising</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Testimonials</a>
+                                        <a>Case Studies</a>
                                     </Link>
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-lg-3 width-20 mb-30">
-                            <h4 className="text-heading-5">Discover</h4>
+                        <div className="col-lg-2 mb-30">
+                            <h4 className="text-heading-5">Services</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
                                     <Link href="/blog-2" legacyBehavior>
-                                        <a>Our Blog</a>
+                                        <a>Behavioural Analytics</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/page-pricing-1" legacyBehavior>
-                                        <a>Plans and Pricing</a>
+                                        <a>Innovation</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/#" legacyBehavior>
-                                        <a>Knowledge Base</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Cookie Policy</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Office Center</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/blog-1" legacyBehavior>
-                                        <a>News and Events</a>
+                                        <a>Design</a>
                                     </Link>
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-lg-3 width-20 mb-30">
-                            <h4 className="text-heading-5">Support</h4>
+                        <div className="col-lg-2 mb-30">
+                            <h4 className="text-heading-5">Resources</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
                                     <Link href="/page-faqs-1" legacyBehavior>
-                                        <a>FAQs</a>
+                                        <a>Arrow Book</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/#" legacyBehavior>
-                                        <a>Editor Help</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Community</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Live Chatting</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/page-contact" legacyBehavior>
-                                        <a>Contact Us</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Support Center</a>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-3 width-16">
-                            <h4 className="text-heading-5">Useful links</h4>
-                            <ul className="menu-footer mt-20">
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Request an offer</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>How it works</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/page-pricing-2" legacyBehavior>
-                                        <a>Pricing</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Reviews</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Stories</a>
+                                        <a>Story Telling</a>
                                     </Link>
                                 </li>
                             </ul>
@@ -171,15 +68,12 @@ const Footer = () => {
                     <div className="footer-bottom mt-20">
                         <div className="row">
                             <div className="col-md-6">
-                                <span className="color-gray-400 text-body-lead">© Agon Official 2022</span>
+                                <span className="color-gray-400 text-body-lead">© Experience Foundry 2023</span>
                                 <Link href="/page-terms" legacyBehavior>
                                     <a className="text-body-text color-gray-400 ml-50">Privacy policy</a>
                                 </Link>
                                 <Link href="/page-terms" legacyBehavior>
                                     <a className="text-body-text color-gray-400 ml-50">Cookies</a>
-                                </Link>
-                                <Link href="/page-terms" legacyBehavior>
-                                    <a className="text-body-text color-gray-400 ml-50">Terms of service</a>
                                 </Link>
                             </div>
                             <div className="col-md-6 text-center text-lg-end text-md-end">
