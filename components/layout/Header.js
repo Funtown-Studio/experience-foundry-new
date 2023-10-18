@@ -28,10 +28,10 @@ const Header = ({ handleOpen, headerStyle }) => {
                                 <nav className="nav-main-menu d-none d-xl-block">
                                     <ul className="main-menu">
                                         <li className="">
-                                            <Link href="#" legacyBehavior><a className="active">About Us</a></Link>
+                                            <Link href="/about" legacyBehavior><a className="active">About Us</a></Link>
                                         </li>
                                         <li className="">
-                                            <Link href="#" legacyBehavior><a className="active">Case Studies</a></Link>
+                                            <Link href="/case-studies" legacyBehavior><a className="active">Case Studies</a></Link>
                                         </li>
                                         <li className="has-children">
                                             <Link href="#" legacyBehavior><a>Services</a></Link>

@@ -7,7 +7,7 @@ import TestimonialSlider from "../components/slider/Testimonial";
 import HeroOne from "../components/layout/HeroOne";
 import Companies from "../components/slider/Companies";
 import Contact from "../components/layout/Contact";
-
+import SubNav from "../components/elements/SubNav";
 
 function Home() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -32,12 +32,17 @@ function Home() {
                 
                 <HeroOne />
 
+
                 <section className="section-box mt-100 grey-bg">
+
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <h2 className="text-heading-2 color-gray-900 mb-50">Who we work with</h2>
+                                <SubNav/>
+
                             </div>
+
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <p>We are a fellowship of Creatives, Technologists, Scientists, Business and Social Strategists 
                                     focused on kindness and candor in ALL of our relationships.
