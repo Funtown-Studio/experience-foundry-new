@@ -1,28 +1,29 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide} from 'swiper/react';
-import { EffectCards } from 'swiper';
-// Import Swiper styles
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/effect-cards';
+import { EffectCards, Mousewheel, Keyboard } from 'swiper/modules';
+import SwiperCore from 'swiper';
 
+SwiperCore.use([EffectCards, Mousewheel, Keyboard]);
 
+const swiperStyle = {
+  width: '240px',
+  height: '320px'
+};
 
-export default () => {
+export default function Cards({ image, text }) {
   return (
     <Swiper
-    
-      effect='cards'
-            slidesPerView={1}
-
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-        >
-            <SwiperSlide>                                
-                <img className="" src="assets/imgs/page/about/1/chilling-astronaut.png" alt="chilling-astronaut" />
-            </SwiperSlide>
-            <SwiperSlide>                                
-                <img className="" src="assets/imgs/page/about/1/chilling-astronaut.png" alt="chilling-astronaut" />
-            </SwiperSlide>
-
-        </Swiper>
-    );
-};
+      effect={'cards'}
+      grabCursor={true}
+      modules={[EffectCards]}
+      className="mySwiper"
+      keyboard={true}
+      style={swiperStyle}
+    >
+      <SwiperSlide style={{ background: `url(${image})` }}></SwiperSlide>
+      <SwiperSlide>{text}</SwiperSlide>
+    </Swiper>
+  );
+}

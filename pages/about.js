@@ -10,22 +10,12 @@ import Contact from "../components/layout/Contact";
 import Footer from "../components/layout/Footer";
 import Swiper from 'swiper/bundle';
 import { SwiperSlide } from "swiper/react";
+import HeroAbout from "../components/elements/HeroAbout";
 
 
 // import styles bundle
 import 'swiper/css/bundle';
 import Cards from "../components/slider/Cards";
-
-// init Swiper:
-const swiper = new Swiper('.swiper', {
-    effect: 'cards',
-    cardsEffect: {
-        perSlideOffset: 8,        
-        perSlideRotate: 2,       
-        rotate: true,        
-        slideShadows: true
-    },
-  });
 
 function About1() {
     // Open modal
@@ -40,7 +30,17 @@ function About1() {
     return (
         <>
             <Layout>
-                <HeroOne />
+            <section className="section-box">
+                    <div className="banner-hero banner-3 black-bg">
+                        <div className="container">
+                            <div className="text-center">
+                                <h1 className="text-display-2 text-white mt-40">We're in the business<br className="d-lg-block d-none" />of  experience<svg class="stroke-svg" viewBox="0 0 154 13"></svg>
+                               </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
                 <section className="section-box mt-100">
 
                     <div className="container">
@@ -76,13 +76,32 @@ function About1() {
                             </div>
                             <div className="col-lg-2 col-sm-1 col-12" />
                         </div>
-
-
-
-
-                        {/* <Cards/> */}
-
                     </div>
+                    <div className="container mt-70">
+                        <div className="row">
+                            <div className="col-lg-3 col-sm-12">
+                                <div className="pb-40 mb-30">
+                                    <Cards image="assets/imgs/page/about/1/daniel.png" text="Slide 1" />
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-12">
+                                <div className="pb-40 mb-30">
+                                    <Cards image="assets/imgs/page/about/1/jared.png" text="Slide 1" />
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-12">
+                                <div className="pb-40 mb-30">
+                                    <Cards image="assets/imgs/page/about/1/daryl.png" text="Slide 1" />
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-12">
+                                <div className="pb-40 mb-30">
+                                    <Cards image="assets/imgs/page/about/1/jonah.png" text="Slide 1" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="container mt-70">
                         <div className="row">
                             <div className="col-lg-4 col-sm-12">
