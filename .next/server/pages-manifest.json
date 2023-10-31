@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/about": "pages/about.js",
-  "/": "pages/index.js"
+  "/design": "pages/design.js",
+  "/behavioural-analytics": "pages/behavioural-analytics.js",
+  "/innovation": "pages/innovation.js"
 }

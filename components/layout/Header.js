@@ -37,13 +37,13 @@ const Header = ({ handleOpen, headerStyle }) => {
                                             <Link href="#" legacyBehavior><a>Services</a></Link>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link href="/page-about-1" legacyBehavior><a><i className="fi fi-rr-star" />Behvaioural Analytics</a></Link>
+                                                    <Link href="/behavioural-analytics" legacyBehavior><a><i className="fi fi-rr-star" />Behvaioural Analytics</a></Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-about-2" legacyBehavior><a><i className="fi fi-rr-star" />Innovation</a></Link>
+                                                    <Link href="/innovation" legacyBehavior><a><i className="fi fi-rr-star" />Innovation</a></Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-about-3" legacyBehavior><a><i className="fi fi-rr-star" />Design</a></Link>
+                                                    <Link href="/design" legacyBehavior><a><i className="fi fi-rr-star" />Design</a></Link>
                                                 </li>
                                             </ul>
                                         </li>

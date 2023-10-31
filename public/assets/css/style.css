@@ -536,8 +536,8 @@ a {
 
 .text-heading-2 {
   font-family: "Chivo", sans-serif;
-  font-weight: bold;
-  font-size: 42px;
+  font-weight: normal;
+  font-size: 40px;
   line-height: 44px;
   letter-spacing: 0%;
 }
@@ -9320,16 +9320,80 @@ input.qty-val {
     color: #fff;
   }
 
-  .swiper-slide:nth-child(1n) {
-    background-color: red;
-  }
-  
-  .swiper-slide:nth-child(2n) {
-    background-color: rgb(0, 140, 255);
-  }
-  
   #cursor-image {
     position: absolute;
     display: none;
     pointer-events: none; /* Ensures that the cursor does not interact with the image */
+}
+
+.innovation-mouse-gradient {
+  margin-right: 5px;
+}
+
+.just-bold {
+  font-weight: bold;
+}
+
+.just-italic {
+  font-style: italic;
+}
+
+.square-button {
+  background-color: white;
+  text-decoration: underline;
+  padding: 8px 15px 8px 15px;
+  border-width: 0.5px;
+}
+
+.vertical-line {
+  border-left: 1px solid black; 
+  padding: 5px 0px 2px 15px; 
+}
+
+.vertical-line-right {
+  border-right: 1px solid black; 
+  padding: 5px 0px 2px 15px; 
+}
+
+.vertical-line-white {
+  border-left: 1px solid white; 
+  padding: 5px 0px 2px 15px; 
+}
+
+.vertical-line-white-right {
+  border-right: 1px solid white; 
+  padding: 5px 0px 2px 15px; 
+}
+
+.gradient-background {
+  background: var(--gradient-neuro, linear-gradient(129deg, #FCF3D0 13.21%, #CBCBF9 94.99%));
+}
+
+.blur-img {
+  width: 40%;
+  height: 60%;
+  float: right;
+  margin-right: 100px;
+}
+
+.thinking-astronaut-img {
+  width: 25%;
+}
+
+.book-img {
+  width: 30%;
+}
+
+.img-border-radius {
+  border-radius: 15px;
+  width: 80%;
+}
+
+.big-div-horizontal-seperation {
+  border-bottom: 2px solid rgba(163, 163, 163, 0.4);
+}
+
+.surfing-astronaut {
+  width: 30%;
+  padding-left: 30px;
 }
