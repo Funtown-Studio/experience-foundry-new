@@ -22,20 +22,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/behavioural-analytics": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/behavioural-analytics.js"
-    ],
     "/design": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/design.js"
     ],
-    "/innovation": [
+    "/neuro-emote": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/innovation.js"
+      "static/chunks/pages/neuro-emote.js"
     ]
   },
   "ampFirstPages": []
