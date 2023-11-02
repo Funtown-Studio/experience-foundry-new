@@ -10,6 +10,8 @@ import Contact from "../components/layout/Contact";
 import SubNav from "../components/elements/SubNav";
 import ContactDark from "../components/layout/ContactDark"
 import InnovationSolutions from "../components/slider/InnovationSolutions";
+import Image from 'next/image';
+
 
 function Innovation() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -64,9 +66,24 @@ function Innovation() {
                             <div className="text-center">
                                 <h1 className="text-display-2 text-white mt-40">Innovation
                                 </h1>
-                                <p className="text-white">Fueling Transformation Through Innovation</p><svg class="stroke-svg" viewBox="0 0 154 13"></svg>
+                                <p className="text-white mb-150">Fueling Transformation Through Innovation</p><svg class="stroke-svg" viewBox="0 0 154 13"></svg>
+                            </div>
+                            <div className="general-clouds">
+                                <Image
+                                    src="/assets/imgs/page/innovation/cloudsdesktop.png"
+                                    alt="Clouds"
+                                    layout="fill"
+                                    className="cloud-image cloud-image-desktop"
+                                />
+                                <Image
+                                    src="/assets/imgs/page/innovation/cloudsdesktop.png"
+                                    alt="Clouds"
+                                    layout="fill"
+                                    className="cloud-image cloud-image-mobile"
+                                />
                             </div>
                         </div>
+
                     </div>
                 </section>
 
@@ -80,9 +97,9 @@ function Innovation() {
                                 <img src="assets/imgs/page/innovation/mouse-gradient-2.png" className="innovation-mouse-gradient blur-img"/>
                             </div>
                             <div className="col-lg-6 col-sm-6 col-12">
-                                <p>Innovation is the cornerstone of progress, and at Experience Foundry, we bring innovation to the forefront of your business 
+                                <p className="mb-20">Innovation is the cornerstone of progress, and at Experience Foundry, we bring innovation to the forefront of your business 
                                     strategy. Our mission is to empower your organization with cutting-edge ideas, technology, and solutions that drive meaningful 
-                                    change. </p> <br></br>
+                                    change. </p> 
                                     <p>It's a dynamic framework that provides you with ongoing access to our expertise in Technology Innovation, Experience Design, 
                                         Behavioral Analytics, and Business & Social Strategy.</p>
                             </div>
@@ -90,35 +107,34 @@ function Innovation() {
                     </div>
                 </section>
 
-                <section className="section-box mt-80">
+                <section className="section-box mt-100">
 
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
-                                <h2 className="text-heading-2 color-gray-900 mb-50">Agile and adaptive solutions</h2>
+                                <h2 className="text-heading-2 color-gray-900 ">Agile and adaptive</h2>
+                                <h2 className="text-heading-2 color-gray-900 mb-50">solutions</h2>
                             </div>
 
-                            <div className="col-lg-6 col-sm-6 col-12">
-                                <p>Embracing innovation shouldn't be a one-time event; it should be an ongoing journey. 
-                                <br/>
-                                Our Innovation model is agile and adaptive, allowing your organization to stay ahead of the curve. 
-                                    <br />
-                                    We offer:</p>
+                            <div className="col-lg-6 col-sm-6 col-12 mb-60">
+                                <p className="mb-20">Embracing innovation shouldn't be a one-time event; it should be an ongoing journey. </p>
+                                <p className="mb-20">Our Innovation model is agile and adaptive, allowing your organization to stay ahead of the curve.</p> 
+                                <p className="mb-20">We offer:</p>    
                             </div>
                         </div>
                     <InnovationSolutions/>
                     </div>
                 </section>
 
-                <section className="section-box mt-80">
+                <section className="section-box mt-80 mb-80">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <h2 className="text-heading-2 color-gray-900 mb-50">Innovation through <span><br/>neuro-insights</span></h2>
                             </div>
                             <div className="col-lg-6 col-sm-6 col-12">
-                                <p>This service extends to Neuro-Innovation, where we leverage advanced EEG data analysis 
-                                    and emotional response measurements. </p> <br/>
+                                <p className="mb-20">This service extends to Neuro-Innovation, where we leverage advanced EEG data analysis 
+                                    and emotional response measurements. </p> 
                                 <p>This unique approach allows us to understand how the human brain interacts with your products 
                                     and services on an emotional level. By harnessing neuro-insights, we guide the creation of 
                                     remarkable, emotionally resonant experiences.</p>
@@ -132,18 +148,18 @@ function Innovation() {
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <h2 className="text-heading-2 color-gray-900 mb-50">Fostering Innovation Through
-                                <span className="just-bold">"Arrow and the isand of Adventure"</span></h2>
+                                <span className="just-bold"> "Arrow and the isand of Adventure"</span></h2>
                                 <div className="col-lg-8 col-sm-6 col-12 text-center">
                                 <img src="assets/imgs/page/innovation/book.png" className="book-img"></img>
                             </div>
 
                             </div>
                             <div className="col-lg-6 col-sm-6 col-12">
-                                <p>"Arrow and the Islands of Adventure," a captivating children's book authored by Daniel Bruneau Ph.D. 
+                                <p className="mb-20">"Arrow and the Islands of Adventure," a captivating children's book authored by Daniel Bruneau Ph.D. 
                                     and Jared Thurmon and beautifully illustrated by Patrick Corrigan, is a testament to our commitment 
                                     to nurturing young minds. Published in 2022 under Experience Foundry's copyright, this enchanting 
                                     story introduces design thinking's five steps: empathize, define, brainstorm, build, and test. 
-                                </p> <br/>
+                                </p> 
                                 <p>Through the adventures of Arrow and her friends, young readers are inspired to work collaboratively, 
                                     think critically, and embrace creativity, fostering a spirit of innovation from an early age—a spirit 
                                     that Experience Foundry continues to nurture through its innovative services.</p>

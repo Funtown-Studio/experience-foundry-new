@@ -11,16 +11,24 @@ const Header = ({ handleOpen, headerStyle }) => {
             }
         })
     })
+
+    const logoSrc = scroll ? "/assets/imgs/logo-black.png" : "/assets/imgs/logo-white.svg";
+
+
+    const listStyles = {
+        color: scroll ? "black" : "white"
+    };
+
     return (
         <>
-            <header className={scroll ? `${headerStyle} header sticky-bar stick ` : `${headerStyle} header sticky-bar`}>
+            <header className={scroll ? `${headerStyle} header sticky-bar stick ` : `${headerStyle} header sticky-bar`} >
                 <div className="container">
                     <div className="main-header">
                         <div className="header-left">
                             <div className="header-logo">
                                 <Link href="/" legacyBehavior>
                                     <a className="d-flex">
-                                        {headerStyle ? <img alt="Experience Foundry" src="/assets/imgs/logo-white.svg" /> : <img alt="Experience Foundry" src="/assets/imgs/logo-white.svg" />}
+                                        <img alt="Experience Foundry" src={logoSrc} />
                                     </a>
                                 </Link>
                             </div>
@@ -28,13 +36,13 @@ const Header = ({ handleOpen, headerStyle }) => {
                                 <nav className="nav-main-menu d-none d-xl-block">
                                     <ul className="main-menu">
                                         <li className="">
-                                            <Link href="/about" legacyBehavior><a className="active">About Us</a></Link>
+                                            <Link href="/about" legacyBehavior><a className="active" style={listStyles}>About Us</a></Link>
                                         </li>
                                         <li className="">
-                                            <Link href="/case-studies" legacyBehavior><a className="active">Case Studies</a></Link>
+                                            <Link href="/case-studies" legacyBehavior><a className="active" style={listStyles}>Case Studies</a></Link>
                                         </li>
                                         <li className="has-children">
-                                            <Link href="#" legacyBehavior><a>Services</a></Link>
+                                            <Link href="#" legacyBehavior><a style={listStyles}>Services</a></Link>
                                             <ul className="sub-menu">
                                                 <li>
                                                     <Link href="/behavioural-analytics" legacyBehavior><a><i className="fi fi-rr-star" />Behvaioural Analytics</a></Link>
@@ -48,10 +56,10 @@ const Header = ({ handleOpen, headerStyle }) => {
                                             </ul>
                                         </li>
                                         <li className="">
-                                            <Link href="#" legacyBehavior><a className="active">Resources</a></Link>
+                                            <Link href="#" legacyBehavior><a className="active" style={listStyles}>Resources</a></Link>
                                         </li>
                                         <li className="">
-                                            <Link href="#" legacyBehavior><a className="active">Contact</a></Link>
+                                            <Link href="#" legacyBehavior><a className="active" style={listStyles}>Contact</a></Link>
                                         </li>
                                     </ul>
                                 </nav>

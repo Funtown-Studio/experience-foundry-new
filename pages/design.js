@@ -10,6 +10,8 @@ import Contact from "../components/layout/Contact";
 import SubNav from "../components/elements/SubNav";
 import ContactDark from "../components/layout/ContactDark"
 import DesignCases from "../components/slider/DesignCases";
+import Image from 'next/image';
+
 
 function Design() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -64,10 +66,24 @@ function Design() {
                                 <div className="col-md-5">
                                     <div className="text-center">
                                         <h1 className="text-display-2 text-white mt-40">Design</h1>
-                                        <p className="text-white">Designing captivating interaction and visual experiences, be it in the digital or non-digital realm, is an art form that requires a human-centered mindset.</p>
+                                        <p className="text-white mb-150">Designing captivating interaction and visual experiences, be it in the digital or non-digital realm, is an art form that requires a human-centered mindset.</p>
                                         <svg className="stroke-svg" viewBox="0 0 154 13"></svg>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="general-clouds">
+                                <Image
+                                    src="/assets/imgs/page/design/design-clouds-desktop.png"
+                                    alt="Clouds"
+                                    layout="fill"
+                                    className="cloud-image cloud-image-desktop"
+                                />
+                                <Image
+                                    src="/assets/imgs/page/design/design-clouds-desktop.png"
+                                    alt="Clouds"
+                                    layout="fill"
+                                    className="cloud-image cloud-image-mobile"
+                                />
                             </div>
                         </div>
                     </div>

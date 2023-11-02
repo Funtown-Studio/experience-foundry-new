@@ -9378,8 +9378,9 @@ input.qty-val {
 .blur-img {
   width: 40%;
   height: 60%;
+  margin-top: 40px;
+  margin-right: 130px;
   float: right;
-  margin-right: 100px;
 }
 
 .thinking-astronaut-img {
@@ -9472,7 +9473,6 @@ input.qty-val {
   height: 50vh; 
   position: relative;
   margin-bottom: 50px;
-  left: 1%;
 }
 
 .scribble-btn {
@@ -9508,3 +9508,50 @@ input.qty-val {
   color: white; /* Change to white on hover */
 }
 
+@media (max-width: 650px) {
+  .scribble-btn {
+    background-size: 100% auto;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: black; 
+    z-index: 1; 
+  }
+}
+
+@media (max-width: 940px) {
+  .cloud-image-desktop {
+    display: none; 
+  }
+  .cloud-image-mobile {
+    display:block;
+    height: 50px;
+  }
+}
+
+@media (min-width: 941px) {
+  .cloud-image-desktop {
+    display: block; 
+  }
+  .cloud-image-mobile {
+    display: none;
+  }
+}
+
+.frontfacing {
+  position: relative;
+  z-index: 2;
+}
+
+.general-clouds {
+  height: auto;
+}
+
+.innovation-slider-headings {
+  font-weight: lighter;
+  font-size: 25px;
+}

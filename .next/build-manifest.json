@@ -27,6 +27,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/design.js"
     ],
+    "/innovation": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/innovation.js"
+    ],
     "/neuro-emote": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
