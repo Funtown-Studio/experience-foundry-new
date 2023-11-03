@@ -1,8 +1,7 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
   "/neuro-emote": "pages/neuro-emote.js",
-  "/innovation": "pages/innovation.js",
-  "/design": "pages/design.js"
+  "/": "pages/index.js"
 }

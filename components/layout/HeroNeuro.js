@@ -116,8 +116,8 @@ const HeroNeuro = ({headerStyle}) => {
                 </div>
                 <div className="col-lg-12 col-sm-12 col-12">
                     <div className="centered-link">
-                            <a  className="centered-link btn btn-mb scribble-btn">
-                                <span href="/" className="overlay-text">Download PDF</span>
+                            <a  className="centered-link btn btn-mb scribble-btn" href="/assets/imgs/page/neuro/neuro-download.pdf">
+                                <span  className="overlay-text">Download PDF</span>
                             </a>
                     </div>
                 </div>

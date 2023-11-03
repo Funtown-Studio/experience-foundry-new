@@ -36,22 +36,22 @@ const HeaderDark = ({ handleOpen, headerStyle }) => {
                                 <nav className="nav-main-menu d-none d-xl-block" >
                                     <ul className="main-menu" >
                                         <li className="">
-                                            <Link href="/about" legacyBehavior><a className="active" style={listStyles}>About Us</a></Link>
+                                            <Link href="#" legacyBehavior><a className="active" style={listStyles}>About Us</a></Link>
                                         </li>
                                         <li className="">
-                                            <Link href="/case-studies" legacyBehavior><a className="active" style={listStyles}>Case Studies</a></Link>
+                                            <Link href="#" legacyBehavior><a className="active" style={listStyles}>Case Studies</a></Link>
                                         </li>
                                         <li className="has-children">
                                             <Link href="#" legacyBehavior><a style={listStyles}>Services</a></Link>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link href="/behavioural-analytics" legacyBehavior><a><i className="fi fi-rr-star" />Behvaioural Analytics</a></Link>
+                                                    <Link href="#" legacyBehavior><a><i className="fi fi-rr-star" />Behvaioural Analytics</a></Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/innovation" legacyBehavior><a><i className="fi fi-rr-star" />Innovation</a></Link>
+                                                    <Link href="#" legacyBehavior><a><i className="fi fi-rr-star" />Innovation</a></Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/design" legacyBehavior><a><i className="fi fi-rr-star" />Design</a></Link>
+                                                    <Link href="#" legacyBehavior><a><i className="fi fi-rr-star" />Design</a></Link>
                                                 </li>
                                             </ul>
                                         </li>
