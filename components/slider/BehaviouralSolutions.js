@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-key */
 import Link from "next/link";
-import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from 'swiper/modules';
+import SwiperCore from 'swiper';
 
 SwiperCore.use([Autoplay, Navigation]);
 const BehaviouralSolutions = () => {

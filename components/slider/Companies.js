@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-key */
 import React from 'react';
-import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation } from 'swiper/modules';
+import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 SwiperCore.use([Autoplay, Navigation]);

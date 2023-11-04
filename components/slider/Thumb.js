@@ -5,7 +5,8 @@ import { useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { FreeMode, Navigation, Thumbs } from "swiper";
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+
 const ThumbSlider = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const data = [

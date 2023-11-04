@@ -2,7 +2,8 @@
 /* eslint-disable react/jsx-key */
 import Link from 'next/link';
 import React from 'react';
-import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation } from 'swiper/modules';
+import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import data from "../../util/shopData";
 SwiperCore.use([Autoplay, Navigation]);
