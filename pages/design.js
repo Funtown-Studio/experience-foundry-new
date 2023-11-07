@@ -11,6 +11,8 @@ import SubNav from "../components/elements/SubNav";
 import ContactDark from "../components/layout/ContactDark"
 import DesignCases from "../components/slider/DesignCases";
 import Image from 'next/image';
+import HeroDesign from "../components/layout/HeroDesign";
+import Footer from "../components/layout/Footer";
 
 
 function Design() {
@@ -58,38 +60,9 @@ function Design() {
 
     return (
         <>
-            <Layout>
-                <section className="section-box">
-                    <div className="banner-hero banner-3 black-bg">
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-md-5">
-                                    <div className="text-center">
-                                        <h1 className="text-display-2 text-white mt-40">Design</h1>
-                                        <p className="text-white mb-150">Designing captivating interaction and visual experiences, be it in the digital or non-digital realm, is an art form that requires a human-centered mindset.</p>
-                                        <svg className="stroke-svg" viewBox="0 0 154 13"></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="general-clouds">
-                                <Image
-                                    src="/assets/imgs/page/design/design-clouds-desktop.png"
-                                    alt="Clouds"
-                                    layout="fill"
-                                    className="cloud-image cloud-image-desktop"
-                                />
-                                <Image
-                                    src="/assets/imgs/page/design/design-clouds-desktop.png"
-                                    alt="Clouds"
-                                    layout="fill"
-                                    className="cloud-image cloud-image-mobile"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <HeroDesign/>
 
-                <section className="section-box mt-100 big-div-horizontal-seperation">
+                <section className="section-box mt-200 big-div-horizontal-seperation">
                     <div className="container mb-120">
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
@@ -112,7 +85,7 @@ function Design() {
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <h2 className="text-heading-2 color-gray-900 mb-50">Simplicity meets <span><br />elegance</span></h2>
-                                <img src="assets/imgs/page/innovation/mouse-gradient-2.png" className="innovation-mouse-gradient blur-img" />
+                                <img src="assets/imgs/page/innovation/mouse-gradient-2.png" className="innovation-mouse-gradient blur-img-2" />
                             </div>
 
                             <div className="col-lg-6 col-sm-6 col-12">
@@ -126,7 +99,7 @@ function Design() {
                 </section>
 
                 <section className="section-box mt-150 big-div-horizontal-seperation">
-                    <div className="container ">
+                    <div className="container">
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <h2 className="text-heading-2 color-gray-900 mb-50">Our design work</h2>
@@ -188,7 +161,7 @@ function Design() {
                                                 <h4 className="text-heading-4 text-white">
                                                     Design-driven <br></br> revenue growth
                                                 </h4>
-                                                <p className="text-body-text text-white mt-15">
+                                                <p className="text-body-text text-white mt-30">
                                                 Explore how our meticulous design approach enhances user engagement, drives conversions, 
                                                 and boosts your revenue.
                                                 </p>
@@ -201,7 +174,7 @@ function Design() {
                                                 <h4 className="text-heading-4 text-white">
                                                     Loyalty-building<br></br> experiences
                                                 </h4>
-                                                <p className="text-body-text color-gray-600 mt-15 text-white">
+                                                <p className="text-body-text color-gray-600 mt-30 text-white">
                                                 Discover how our designs create memorable experiences that foster unwavering customer loyalty.
                                                 </p>
                                             </div>
@@ -211,7 +184,7 @@ function Design() {
                                         <div className="list-icons mt-50">
                                             <div className="vertical-line-white vertical-line-white-right">
                                                 <h4 className="text-heading-4 text-white">Design:<br></br> your ROI booster</h4>
-                                                <p className="text-body-text color-gray-600 mt-15 text-white">
+                                                <p className="text-body-text color-gray-600 mt-30 text-white">
                                                     Learn how our design services maximize returns, contributing to your business's success.
                                                 </p>
                                             </div>
@@ -261,7 +234,7 @@ function Design() {
                                         Ready to immerse yourself in the magic of storytelling? Play our interactive storytelling game and 
                                         experience the enchantment firsthand.
                                         </h6>
-                                        <button className="mt-30 square-button">Find out more</button>
+                                        <button className="mt-50 square-button">Find out more</button>
                                     </div>
                                 </div>
                             </div>
@@ -271,7 +244,7 @@ function Design() {
 
 
                 <Contact />
-            </Layout>
+                <Footer/>
 
         </>
     )

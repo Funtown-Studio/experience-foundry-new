@@ -11,6 +11,8 @@ import SubNav from "../components/elements/SubNav";
 import ContactDark from "../components/layout/ContactDark"
 import DesignCases from "../components/slider/DesignCases";
 import BehaviouralSolutions from "../components/slider/BehaviouralSolutions";
+import HeroBehavioural from "../components/layout/HeroBehavioural";
+import Footer from "../components/layout/Footer";
 
 function BehvaiouralAnalytics() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -57,7 +59,7 @@ function BehvaiouralAnalytics() {
 
     return (
         <>
-            <Layout>
+                <HeroBehavioural/>
                 <section className="section-box">
                     <div className="banner-hero banner-3 black-bg">
                         <div className="container">
@@ -175,7 +177,7 @@ function BehvaiouralAnalytics() {
                         <div className="row">
                             <div className="col-lg-5 col-sm-6 col-12">
                                 <h2 className="text-heading-2 mt-30 text-white">Optimizing customer touchpoints</h2>
-                                <p className="text-white mt-40">
+                                <p className="text-white mt-40 mb-20">
                                     Every customer touchpoint has a benefit and a cost to your organization. A purchase interaction 
                                     generates revenue, a customer support interaction carries a cost. It's not enough to say 
                                     "improve user interface response times". What are the features, and what is their cost/benefit 
@@ -190,8 +192,7 @@ function BehvaiouralAnalytics() {
                     <div className="container mt-150 mb-150">
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
-                                <h2 className="text-heading-2 color-gray-900 mb-50">Storytelling:
-                                    <span><br />creating engaging narratives</span></h2>
+                                <img src="assets/imgs/page/behavioural/brain-neuro.png" className="brain-neuro" />
                             </div>
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <p>
@@ -211,7 +212,7 @@ function BehvaiouralAnalytics() {
                 </section>
 
                 <Contact />
-            </Layout>
+                <Footer/>
 
         </>
     )

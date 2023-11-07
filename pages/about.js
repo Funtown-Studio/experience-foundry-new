@@ -10,7 +10,9 @@ import Contact from "../components/layout/Contact";
 import Footer from "../components/layout/Footer";
 import Swiper from 'swiper/bundle';
 import { SwiperSlide } from "swiper/react";
-import HeroAbout from "../components/elements/HeroAbout";
+import HeroAbout from "../components/layout/HeroAbout";
+import Image from 'next/image';
+import { Parallax, ParallaxLayer } from "swiper/modules";
 
 
 // import styles bundle
@@ -29,21 +31,13 @@ function About1() {
     };
     return (
         <>
-            <Layout>
+        <HeroAbout/>
             <section className="section-box">
-                    <div className="banner-hero banner-3 black-bg">
-                        <div className="container">
-                            <div className="text-center">
-                                <h1 className="text-display-2 text-white mt-40">We're in the business<br className="d-lg-block d-none" />of  experience<svg class="stroke-svg" viewBox="0 0 154 13"></svg>
-                               </h1>
-                            </div>
-                        </div>
-                    </div>
 
                 </section>
-                <section className="section-box mt-100">
+                <section className="section-box mt-200 mt-50" >
 
-                    <div className="container">
+                    <div className="container about-margin-head">
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <h2 className="text-heading-2 color-gray-900 mb-50">Our vision and mission </h2>
@@ -191,8 +185,6 @@ function About1() {
                     </section>
                 ) : null}
                 <Footer/>
-            </Layout>
-
         </>
     )
 }

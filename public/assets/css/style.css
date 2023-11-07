@@ -424,8 +424,9 @@ a {
 .text-body-excerpt {
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 26px;
+  color: black;
 }
 
 .text-body-text {
@@ -3572,11 +3573,14 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position:relative;
+  z-index: 999;
 }
 .header .main-header .header-left {
   display: flex;
   align-items: center;
   width: 100%;
+  margin-left: 100px;
 }
 .header .main-header .header-left .header-logo {
   margin-right: 50px;
@@ -9345,7 +9349,7 @@ input.qty-val {
 }
 
 .square-button {
-  background-color: white;
+  background-color: transparent;
   text-decoration: underline;
   padding: 8px 15px 8px 15px;
   border-width: 0.5px;
@@ -9379,6 +9383,14 @@ input.qty-val {
   width: 40%;
   height: 60%;
   margin-top: 40px;
+  margin-right: 130px;
+  float: right;
+}
+
+.blur-img-2 {
+  width: 40%;
+  height: 60%;
+  margin-top: -20px;
   margin-right: 130px;
   float: right;
 }
@@ -9554,4 +9566,13 @@ input.qty-val {
 .innovation-slider-headings {
   font-weight: lighter;
   font-size: 25px;
+}
+
+.about-margin-head {
+  margin-top: 130px;
+}
+
+.brain-neuro {
+  margin-top: -80px;
+  margin-left: -40px;
 }

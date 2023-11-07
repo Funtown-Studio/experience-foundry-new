@@ -8,6 +8,7 @@ import HeroOne from "../components/layout/HeroOne";
 import Companies from "../components/slider/Companies";
 import Contact from "../components/layout/Contact";
 import SubNav from "../components/elements/SubNav";
+import Footer from "../components/layout/Footer";
 
 function Home() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -42,20 +43,21 @@ function Home() {
       setCursorPosition({ x: e.clientX, y: e.clientY });
     };
   
-    const handleMouseEnter = () => {
-      setIsHovered(true);
+    const handleMouseEnter = (event) => {
+        setIsHovered(true);
+        setCursorPosition({ x: event.clientX, y: event.clientY });
     };
-  
+    
     const handleMouseLeave = () => {
-      setIsHovered(false);
+        setIsHovered(false);
     };
+    
 
 
 
     return (
         <>
-            <Layout>
-                
+                <Layout>
                 <HeroOne />
 
 
@@ -120,25 +122,25 @@ function Home() {
                 <section className="section-box black-bg">
                     <div className="">
                         <div className="row row-with-border" id="row-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                            <div className="col-lg-6 col-sm-6 col-12">
-                                <p className="">Story-Driven Product Design</p>
-                                <div className="reveal-image">
-                                    {isHovered && (
-                                        <img
-                                            id="cursor-image"
-                                            src="assets/imgs/page/home/float-1.png"
-                                            alt="Cursor Image"
-                                            style={{
-                                                top: cursorPosition.y + "px",
-                                                left: cursorPosition.x + "px",
-                                                display: "block",
-                                                transform: "translate(-50%, -50%)", // Center the image
-                                            }}
-                                        />
-                                    )}
-                                </div>
+                        <div className="col-lg-6 col-sm-6 col-12">
+                            <p className="">Story-Driven Product Design</p>
+                            <div className="reveal-image">
+                                {isHovered && (
+                                    <img
+    id="cursor-image"
+    src="assets/imgs/page/home/float-1.png"
+    alt="Cursor Image"
+    style={{
+        transform: `translate(${cursorPosition.x -50}px, ${cursorPosition.y - 350}px)`,
+        transition: "transform 0.1s ease-in-out", // You can adjust the transition duration as needed
+        display: isHovered ? "block" : "none",
+    }}
+/>
+
+                                )}
                             </div>
-                            <div className="col-lg-6 col-sm-6 col-12">
+                        </div>
+                        <div className="col-lg-6 col-sm-6 col-12">
                                 <p className="">SANITARIUM UX</p>
                                 <div class="reveal-image"></div>
                             </div>
@@ -167,6 +169,7 @@ function Home() {
                     </div>
                 </section>
                 <Contact />                 
+            <Footer/>
             </Layout>
 
         </>

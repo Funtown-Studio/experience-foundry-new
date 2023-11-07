@@ -1,6 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from 'next/image';
+
+
 const Header = ({ handleOpen, headerStyle }) => {
     const [scroll, setScroll] = useState(0)
     useEffect(() => {
@@ -18,6 +21,12 @@ const Header = ({ handleOpen, headerStyle }) => {
     const listStyles = {
         color: scroll ? "black" : "white"
     };
+
+    const heroFull = {
+        display: scroll ? "none" : "block",
+        visibility: scroll ? "hidden" : "visible",
+        height: scroll ? "auto" : "630px",
+    }
 
     return (
         <>
@@ -67,9 +76,11 @@ const Header = ({ handleOpen, headerStyle }) => {
                                     <span className="burger-icon-top" /><span className="burger-icon-mid" /><span className="burger-icon-bottom" />
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
+
             </header>
 
         </>

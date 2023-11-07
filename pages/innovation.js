@@ -11,6 +11,7 @@ import SubNav from "../components/elements/SubNav";
 import ContactDark from "../components/layout/ContactDark"
 import InnovationSolutions from "../components/slider/InnovationSolutions";
 import Image from 'next/image';
+import FooterDark from "../components/layout/FooterDark"
 
 
 function Innovation() {
@@ -170,7 +171,8 @@ function Innovation() {
                 </section>
 
 
-                <ContactDark />                 
+                <ContactDark />   
+                <FooterDark/>             
             </Layout>
 
         </>
