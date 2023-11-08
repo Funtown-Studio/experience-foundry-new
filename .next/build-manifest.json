@@ -22,20 +22,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/behavioural-analytics": [
+    "/case-studies": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/behavioural-analytics.js"
+      "static/chunks/pages/case-studies.js"
     ],
     "/design": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/design.js"
-    ],
-    "/innovation": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/innovation.js"
     ]
   },
   "ampFirstPages": []

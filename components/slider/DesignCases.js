@@ -10,29 +10,29 @@ const DesignCases = () => {
 
     const data = [
         {
-            img: "9.jpg",
-            avatar: "1.jpg",
-            title: "Liguid Wave",
-            author: "Sound Box"
+            img: "/assets/imgs/page/about/1/story.png",
+            title: "Story-driven product design",
         },
         {
-            img: "10.jpg",
-            avatar: "2.jpg",
-            title: "Liguid Wave",
-            author: "Sound Box"
+            img: "/assets/imgs/page/about/1/edu.png",
+            title: "Edutainment",
         },
         {
-            img: "11.jpg",
-            avatar: "3.jpg",
-            title: "Liguid Wave",
-            author: "Sound Box"
+            img: "/assets/imgs/page/about/1/behave.png",
+            title: "Behavioural Analytics",
         },
         {
-            img: "12.jpg",
-            avatar: "4.jpg",
-            title: "Liguid Wave",
-            author: "Sound Box"
+            img: "/assets/imgs/page/about/1/redesign.png",
+            title: "Redesigning Investment Planning",
         },
+        {
+            img: "/assets/imgs/page/about/1/film.png",
+            title: "Film Industry Project",
+        },
+        {
+            img: "/assets/imgs/page/about/1/nasa.png",
+            title: "NASA Innovation",
+        }
     ];
 
 
@@ -41,7 +41,7 @@ const DesignCases = () => {
             <div className="box-swiper">
                 <div className="swiper-container swiper-group-1 mt-50">
                     <Swiper
-                        slidesPerView={1}
+                        slidesPerView={3} 
                         spaceBetween={30}
                         loop={true}
                         autoplay={{
@@ -56,32 +56,12 @@ const DesignCases = () => {
                     >
                         {data.map((item, i) => (
                             <SwiperSlide key={i}>
-                                <div className="swiper-slide active">
-                                    <div className="row justify-content-center">
-                                        <div className="col-lg-4 col-md-6 col-sm-6">
-                                            <div className="card-grid-style-5 hover-up">
-                                                <div className="grid-5-img mb-15">
-                                                    <img src="/assets/imgs/page/about/1/team-1.png" className="img-border-radius" alt="Agon" />
-                                                </div>
-                                                <h2 className="text-heading-2 mb-5 mt-5">Investment Planning</h2>
-                                            </div>
+                                <div className="col-lg-10 col-sm-12 pr-30">
+                                    <div className="card-grid-style-4">
+                                        <div className="grid-5-img mb-15">
+                                            <img src={item.img} className="img-border-radius" alt="Agon" />
                                         </div>
-                                        <div className="col-lg-4 col-md-6 col-sm-6">
-                                            <div className="card-grid-style-5 hover-up">
-                                                <div className="grid-5-img mb-15">
-                                                    <img src="/assets/imgs/page/about/1/team-1.png" className="img-border-radius" alt="Agon" />
-                                                </div>
-                                                <h2 className="text-heading-2 mb-5 mt-5">Film Industry Project</h2>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-6 col-sm-6">
-                                            <div className="card-grid-style-5 hover-up">
-                                                <div className="grid-5-img mb-15">
-                                                    <img src="/assets/imgs/page/about/1/team-1.png" className="img-border-radius" alt="Agon" />
-                                                </div>
-                                                <h2 className="text-heading-2 mb-5 mt-5">NASA Innovation</h2>
-                                            </div>
-                                        </div>
+                                        <Link href="/blog-single" legacyBehavior><a className="text-heading-2 color-gray-900">{item.title}</a></Link>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -89,8 +69,6 @@ const DesignCases = () => {
                     </Swiper>
                 </div>
             </div>
-
-
         </>
     );
 };

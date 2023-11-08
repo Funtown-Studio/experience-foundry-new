@@ -13,6 +13,7 @@ import { SwiperSlide } from "swiper/react";
 import HeroAbout from "../components/layout/HeroAbout";
 import Image from 'next/image';
 import { Parallax, ParallaxLayer } from "swiper/modules";
+import WhoWeWorkWith from "../components/slider/WhoWeWorkWith";
 
 
 // import styles bundle
@@ -50,14 +51,26 @@ function About1() {
 
                             </div>
                             <div className="col-lg-6 col-sm-6 col-12">
-                                <img className="" src="assets/imgs/page/about/1/chilling-astronaut.png" alt="chilling-astronaut" />
-                            </div>
-                            <p className="text-body-lead-large mt-30">
-                            Experience Foundry not only provides factual conclusions and analysis but also offers a conceptual framework, the story-experience matrix, to help you understand how 
-                            your audience perceives your solution in relation to their own experiences.
-                            </p>
+                            <img className="chilling-astronaut" src="assets/imgs/page/about/1/chilling-astronaut.png" alt="chilling-astronaut" />
                         </div>
+                        <p className="text-body-lead-large mt-30 just-bold">
+                            Experience Foundry not only provides factual conclusions and analysis but also offers a conceptual framework, the story-experience matrix, to help you understand how
+                            your audience perceives your solution in relation to their own experiences.
+                        </p>
+                        <div className="col-lg-5 col-sm-6 col-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="320" height="50" viewBox="0 0 281 45" fill="none" className="our-vision-and-mission-circle">
+                            <path d="M93.4937 5.29776C-25.4757 5.87182 -51.0798 38.8973 150.443 42.9973C351.966 47.0972 275.279 14.7912 203.653 8.44348C146.352 3.36535 91.4297 1.37777 71.1309 1.01875" stroke="url(#paint0_linear_2075_1719)" stroke-width="2" />
+                            <defs>
+                                <linearGradient id="paint0_linear_2075_1719" x1="69.6296" y1="3.39189" x2="99.6138" y2="65.2737" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EB9492" />
+                                    <stop offset="1" stop-color="#5971B9" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        </div>
+
                     </div>
+                </div>
                 </section>
 
 
@@ -95,41 +108,6 @@ function About1() {
                             </div>
                         </div>
                     </div>
-
-                    <div className="container mt-70">
-                        <div className="row">
-                            <div className="col-lg-4 col-sm-12">
-                                <div className="card-grid-style-3 pb-40 bg-5 mb-30">
-                                    <h3 className="text-heading-3 mt-20">Business Strategy</h3>
-                                    <p className="text-body-excerpt mt-20">You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.</p>
-                                    <div className="mt-30">
-                                        <Link href="/page-service-1" legacyBehavior><a className="btn btn-default">Learn more
-                                        </a></Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-sm-12">
-                                <div className="card-grid-style-3 bd-bg-6 pb-40 mb-30">
-                                    <h3 className="text-heading-3 mt-20">Local Marketing</h3>
-                                    <p className="text-body-excerpt mt-20">You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.</p>
-                                    <div className="mt-30">
-                                        <Link href="/page-service-1" legacyBehavior><a className="btn btn-default">Learn more
-                                        </a></Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-sm-12">
-                                <div className="card-grid-style-3 bg-2 pb-40 mb-30">
-                                    <h3 className="text-heading-3 mt-20">Social media</h3>
-                                    <p className="text-body-excerpt mt-20">You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.</p>
-                                    <div className="mt-30">
-                                        <Link href="/page-service-1" legacyBehavior><a className="btn btn-default">Learn more
-                                        </a></Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </section>
 
                 <section className="section-box mt-100 grey-bg">
@@ -138,7 +116,7 @@ function About1() {
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <h2 className="text-heading-2 color-gray-900 mb-50">Who we work with</h2>
-
+                                <img src="assets/imgs/page/innovation/mouse-gradient-2.png" className="innovation-mouse-gradient blur-img-3" />
                             </div>
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <p>We are a fellowship of Creatives, Technologists, Scientists, Business and Social Strategists 
@@ -149,8 +127,8 @@ function About1() {
                                     do MORE for them.</p>
                             </div>
                         </div>
-                        <div className="row mt-50">
-                            <Companies />
+                        <div className="row">
+                        <WhoWeWorkWith />
                         </div>
                     </div>
                 </section>

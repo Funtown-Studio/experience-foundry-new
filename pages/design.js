@@ -63,7 +63,7 @@ function Design() {
             <HeroDesign/>
 
                 <section className="section-box mt-200 big-div-horizontal-seperation">
-                    <div className="container mb-120">
+                    <div className="container mb-120 mt-150">
                         <div className="row">
                             <div className="col-lg-6 col-sm-6 col-12">
                                 <h2 className="text-heading-2 color-gray-900 mb-20">User-centered <span><br />Mindset</span> </h2>
@@ -96,19 +96,28 @@ function Design() {
                             </div>
                         </div>
                     </div>
-                </section>
+            </section>
 
-                <section className="section-box mt-150 big-div-horizontal-seperation">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-6 col-sm-6 col-12">
-                                <h2 className="text-heading-2 color-gray-900 mb-50">Our design work</h2>
-                            </div>
-                            <div className="col-lg-6 col-sm-6 col-12">
-                                <p>At Experience Foundry, we believe that exceptional design is the cornerstone of remarkable experiences.
-                                    Our commitment to creating innovative, user-centric designs is woven into the fabric of our approach.
-                                </p> <br />
-                                <p>With a deep appreciation for aesthetics, functionality, and human interaction, our design work is a testament
+            <section className="section-box mt-150 big-div-horizontal-seperation">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-sm-6 col-12">
+                            <h2 className="text-heading-2 color-gray-900 mb-50">Our design work</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="260" height="77" viewBox="0 0 298 77" fill="none" className="design-work-circle">
+                                <path d="M99.8273 8.40197C-26.3922 11.9441 -54.2506 71.8934 159.446 75.0181C373.143 78.1427 292.472 21.6451 216.622 11.7372C155.943 3.81082 97.7204 1.39387 76.1942 1.17619" stroke="url(#paint0_linear_2199_3236)" stroke-width="2" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_2199_3236" x1="74.5516" y1="5.47688" x2="141.494" y2="85.7914" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EB9492" />
+                                        <stop offset="1" stop-color="#5971B9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div className="col-lg-6 col-sm-6 col-12">
+                            <p>At Experience Foundry, we believe that exceptional design is the cornerstone of remarkable experiences.
+                                Our commitment to creating innovative, user-centric designs is woven into the fabric of our approach.
+                            </p> <br />
+                            <p>With a deep appreciation for aesthetics, functionality, and human interaction, our design work is a testament
                                     to our dedication to crafting experiences that captivate, engage, and inspire. Explore our design journey,
                                     where creativity meets strategy and imagination knows no bounds.</p>
                             </div>
@@ -231,14 +240,23 @@ function Design() {
                                 <div className="col-md-5">
                                     <div className="text-center">
                                         <h6 className="just-bold">
-                                        Ready to immerse yourself in the magic of storytelling? Play our interactive storytelling game and 
+                                        Ready to immerse yourself in the magic of storytelling? Play our interactive storytelling game and
                                         experience the enchantment firsthand.
-                                        </h6>
-                                        <button className="mt-50 square-button">Find out more</button>
-                                    </div>
+                                    </h6>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="180" height="45" viewBox="0 0 281 45" fill="none" className="storytelling-circle">
+                                        <path d="M93.4937 5.29776C-25.4757 5.87182 -51.0798 38.8973 150.443 42.9973C351.966 47.0972 275.279 14.7912 203.653 8.44348C146.352 3.36535 91.4297 1.37777 71.1309 1.01875" stroke="url(#paint0_linear_2199_3231)" stroke-width="2" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_2199_3231" x1="69.6296" y1="3.39189" x2="99.6138" y2="65.2737" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#EB9492" />
+                                                <stop offset="1" stop-color="#5971B9" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <button className="mt-50 square-button">Find out more</button>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </section>
 

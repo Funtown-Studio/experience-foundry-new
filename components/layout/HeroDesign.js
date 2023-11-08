@@ -87,9 +87,9 @@ const HeroDesign = ({ handleOpen, headerStyle }) => {
                     <div className="banner-hero banner-3 black-bg">
                         <div className="container">
                             <div className="text-center">
-                                <h1 className="text-display-2 text-white mt-40">Design<svg class="stroke-svg" viewBox="0 0 154 13"></svg>
+                                <h1 className="text-display-2 text-white mt-40">Design
                                 </h1>
-                                <p className="text-white col-md-6 mx-auto text-center">
+                                <p className="text-white col-md-6 mx-auto text-center mt-40">
                                     Designing captivating interaction and visual experiences, be it in the digital or non-digital realm, is an art form that requires a human-centered mindset.
                                 </p>
                             </div>

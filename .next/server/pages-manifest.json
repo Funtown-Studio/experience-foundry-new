@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/design": "pages/design.js",
-  "/behavioural-analytics": "pages/behavioural-analytics.js",
-  "/innovation": "pages/innovation.js"
+  "/about": "pages/about.js",
+  "/case-studies": "pages/case-studies.js"
 }
