@@ -12,8 +12,9 @@ import Swiper from 'swiper/bundle';
 import { SwiperSlide } from "swiper/react";
 import HeroAbout from "../components/layout/HeroAbout";
 import Image from 'next/image';
-import { Parallax, ParallaxLayer } from "swiper/modules";
 import WhoWeWorkWith from "../components/slider/WhoWeWorkWith";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
 
 
 // import styles bundle
@@ -36,7 +37,7 @@ function About1() {
             <section className="section-box">
 
                 </section>
-                <section className="section-box mt-200 mt-50" >
+                <section className="section-box" >
 
                     <div className="container about-margin-head">
                         <div className="row">
@@ -88,22 +89,47 @@ function About1() {
                         <div className="row">
                             <div className="col-lg-3 col-sm-12">
                                 <div className="pb-40 mb-30">
-                                    <Cards image="assets/imgs/page/about/1/daniel.png" text="Slide 1" />
+                                    <Cards 
+                                        image="assets/imgs/page/about/1/daniel.png" 
+                                        text="Daniel Bruneau"
+                                        subtitle="CEO"
+                                        desc="Behaviorally driven innovation and adaptable affective design sits at the core of Daniel's think-tank mindset. He has built and led Experience Design organizations and research-led Innovation..."
+                                        button="READ MORE"
+                                        />
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-12">
                                 <div className="pb-40 mb-30">
-                                    <Cards image="assets/imgs/page/about/1/jared.png" text="Slide 1" />
+                                    <Cards 
+                                        image="assets/imgs/page/about/1/jared.png" 
+                                        text="Jared Thurmon"
+                                        subtitle="Head of Business Development"
+                                        desc="A serial entrepreneur and instigator of epic ideas, Jared has launched multiple successful business ventures in a number of key industry verticals including healthcare, media, manufacturing..."
+                                        button="READ MORE"                                        
+                                        />
+                                </div>
+                                
+                            </div>
+                            <div className="col-lg-3 col-sm-12">
+                                <div className="pb-40 mb-30">
+                                    <Cards 
+                                        image="assets/imgs/page/about/1/daryl.png" 
+                                        text="Daryl Gungadoo"
+                                        subtitle="Head of Tech Innovation"
+                                        desc="Perpetual curiosity and invention forms the foundation of Daryl's success in developing industry leading technologies. With a background that began in Acoustic Engineering for global broadcast agencies, Daryl's..."
+                                        button="READ MORE"   
+                                        />
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-12">
                                 <div className="pb-40 mb-30">
-                                    <Cards image="assets/imgs/page/about/1/daryl.png" text="Slide 1" />
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-12">
-                                <div className="pb-40 mb-30">
-                                    <Cards image="assets/imgs/page/about/1/jonah.png" text="Slide 1" />
+                                    <Cards 
+                                        image="assets/imgs/page/about/1/jonah.png" 
+                                        text="Jonah Keegan"
+                                        subtitle="Head of Data Science"
+                                        desc="Jonah Keegan is a data enthusiast with a passion for organizing and analyzing complex datasets. His primary focus is human behavior in interaction with digital user interfaces. Recent projects of..."
+                                        button="READ MORE"   
+                                        />
                                 </div>
                             </div>
                         </div>

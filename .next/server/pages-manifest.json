@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/design": "pages/design.js",
-  "/about": "pages/about.js",
-  "/case-studies": "pages/case-studies.js"
+  "/": "pages/index.js",
+  "/NASA-case": "pages/NASA-case.js",
+  "/about": "pages/about.js"
 }

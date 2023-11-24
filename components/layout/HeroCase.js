@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Image from 'next/image';
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const HeroCase = () => {
     return (
         <>
-            <section className="section-box">
+            <section className="section-box">              
                 <div className="banner-hero banner-3 black-bg">
                     <div className="container mb-30">
                         <div className="text-center">
@@ -31,6 +32,14 @@ const HeroCase = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="clouds-container">
+                    <Image
+                        src="/assets/imgs/page/cases/case-clouds.png"
+                        alt="Clouds"
+                        layout="fill"
+                        className="cloud-image cloud-image-desktop"
+                    />
                 </div>
             </section>
         </>

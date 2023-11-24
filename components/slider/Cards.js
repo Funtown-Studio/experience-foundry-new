@@ -12,7 +12,7 @@ const swiperStyle = {
   height: '320px'
 };
 
-export default function Cards({ image, text }) {
+export default function Cards({ image, text, subtitle, desc, button }) {
   return (
     <Swiper
       effect={'cards'}
@@ -23,7 +23,14 @@ export default function Cards({ image, text }) {
       style={swiperStyle}
     >
       <SwiperSlide style={{ background: `url(${image})` }}></SwiperSlide>
-      <SwiperSlide>{text}</SwiperSlide>
+      <SwiperSlide className='swiper-slide2'>
+        <div>
+          <h5 className="text-style">{text}</h5>
+          <h6 className="subtitle-style">{subtitle}</h6>
+          <p className="desc-style">{desc}</p>
+          <button className="button-style">{button}</button>
+        </div>
+      </SwiperSlide>
     </Swiper>
   );
 }

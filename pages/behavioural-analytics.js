@@ -13,6 +13,8 @@ import DesignCases from "../components/slider/DesignCases";
 import BehaviouralSolutions from "../components/slider/BehaviouralSolutions";
 import HeroBehavioural from "../components/layout/HeroBehavioural";
 import Footer from "../components/layout/Footer";
+import VennSwiper from "../components/elements/VennSwiper";
+import { Swiper } from "swiper/react";
 
 function BehvaiouralAnalytics() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -171,7 +173,8 @@ function BehvaiouralAnalytics() {
                     </div>
                 </section>
 
-                <section className="section-box mt-80 black-bg text-white">
+
+            <section className="section-box mt-80 black-bg text-white">
 
                     <div className="container">
                         <div className="row">

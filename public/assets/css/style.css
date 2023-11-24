@@ -369,12 +369,57 @@ a {
 
 .grey-bg {
   background-color: #F1F3F5; 
-  padding: 100px;
+  padding: 80px;
 }
 
 .black-bg {
   background-color: #1D1D1D; 
   padding: 100px;
+}
+
+.black-bg2 {
+  background-color: #1D1D1D; 
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.gradient-font {
+  background-image: var(--Gradient, linear-gradient(78deg, #FF8682 24.13%, #5457E4 72.58%));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.story-driven-case-bg {
+  background-image: url(../imgs/page/cases-single/story-driven-header.png); 
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+.behavioral-analytics-case-bg {
+  background-image: url(../imgs/page/cases-single/behavioral-analytics-header.png); 
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+.investment-planning-case-bg {
+  background-image: url(../imgs/page/cases-single/investment-planning-header.png); 
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+.NASA-case-bg {
+  background-image: url(../imgs/page/cases-single/NASA-header.png); 
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+.black-bg-contact {
+  background-color: #1D1D1D; 
+  padding: 50px;
 }
 
 .row-with-border {
@@ -387,7 +432,7 @@ a {
 }
 
 .row-with-border:hover {
-  background: linear-gradient(45deg, #0000FF, #FF1493);
+  background: linear-gradient(45deg, #5971B9, #EB929C);
   color: white; /* Change text color to grey on hover */
 }
 
@@ -3586,6 +3631,10 @@ label {
   width: 100%;
   position: relative;
   background-color: #1D1D1D;
+}
+
+.header-single-cases{
+  background-color: transparent;
 }
 .header .main-header {
   display: flex;
@@ -9359,8 +9408,21 @@ input.qty-val {
     border-radius: 20px;
     font-size: 22px;
     font-weight: bold;
-    color: #fff;
-  }
+    color: black;
+}
+
+.swiper-slide2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid grey; /* Add this line for the border */
+}
 
   #cursor-image {
     position: absolute;
@@ -9441,6 +9503,49 @@ input.qty-val {
 
 .book-img {
   width: 30%;
+}
+
+.single-case-rocket-img {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.single-case-vial-img {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.space-goggles {
+  width: 45%;
+  margin-top: 5%;
+}
+
+.NASA-treasure {
+  width: 45%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.treasure-chest {
+  width: 45%;
+  margin: 0 auto;
+  display: block;
+}
+
+.single-case-bottle-img {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .img-border-radius {
@@ -9667,6 +9772,21 @@ input.qty-val {
 }
 }
 
+
+@media (min-width: 466px) {
+  .NASA-circle  {
+    display: block;
+    height: auto;
+    position: absolute;
+    left: 27%;
+    transform: translateX(-40%);
+    stroke-width: 1;
+    z-index: 2;
+    top: 476%;
+    width: 38%;
+}
+}
+
 @media (min-width: 466px) {
   .design-work-circle  {
     display: block;
@@ -9702,11 +9822,145 @@ input.qty-val {
   transform: translateX(-40%);
   left: 55%;
   height: 30%;
+}
 
+.blur-img-5 {
+  margin-right: 15px;
+  float: right;
+  position: absolute;
+  z-index: 2;
+  top: 105%;
+  transform: translateX(-40%);
+  left: 40%;
+  height: 30%;
+}
+
+.blur-img-6 {
+  margin-right: 15px;
+  float: right;
+  position: absolute;
+  z-index: 2;
+  top: 115%;
+  transform: translateX(-40%);
+  left: 45%;
+  height: 30%;
+}
+
+.blur-img-7 {
+  margin-right: 15px;
+  float: right;
+  position: absolute;
+  z-index: 2;
+  transform: translateX(-40%);
+  left: 30%;
+  height: 30%;
 }
 
 .chilling-astronaut {
   width: 70%;
   margin-top: -50px;
   margin-left: 90px;
+}
+
+.contact-questions {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Chivo", sans-serif;
+}
+
+.space-hands {
+  display: block;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+
+.contact-form {
+  background: #18191b;
+  border: 2px;
+  border-color: white;
+  border-radius: 8px;
+
+}
+
+
+.parallax {
+
+  overflow: auto;
+
+  /* Create a pseudo-scrollbar to cover the original one */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 12px; /* Adjust width to cover the scrollbar */
+    background: #fff; /* Match background color */
+    /* You might need to adjust these styles based on your design */
+    /* You may need to adjust z-index if the scrollbar appears over content */
+  }
+}
+
+.bike-line {
+  margin-top: 200px;
+}
+
+.curved-line {
+  position: absolute;
+  width: 200px; /* Adjust the width of the curved line */
+  height: 2px; /* Adjust the height of the curved line */
+  background-color: #000; /* Adjust the color of the curved line */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  width: 20px; /* Adjust the width of the buttons */
+  height: 20px; /* Adjust the height of the buttons */
+  background-color: #3498db; /* Adjust the color of the buttons */
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px; /* Adjust the margin between buttons */
+}
+
+.button.filled {
+  background-color: #e74c3c; /* Adjust the filled color of the buttons */
+}
+
+.astro-bike-json {
+  width: 200px;
+}
+
+.subtitle-style {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.desc-style {
+  font-weight: lighter;
+  font-size:12px;
+  margin-top: 5px;
+}
+
+.button-style {
+  border: none;
+  background-color: transparent;
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 0;
+}
+
+.text-style {
+  font-weight: bold;
+}
+
+.definition-box {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
