@@ -15,6 +15,7 @@ import HeroBehavioural from "../components/layout/HeroBehavioural";
 import Footer from "../components/layout/Footer";
 import VennSwiper from "../components/elements/VennSwiper";
 import { Swiper } from "swiper/react";
+import Image from "next/image";
 
 function BehvaiouralAnalytics() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -57,18 +58,41 @@ function BehvaiouralAnalytics() {
         setIsHovered(false);
     };
 
+    const [scrollPosition, setScrollPosition] = useState(0);
 
+    useEffect(() => {
+        // Check if window is defined to ensure it's executed on the client side
+        if (typeof window !== "undefined") {
+          const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+          };
+    
+          window.addEventListener("scroll", handleScroll);
+    
+          return () => {
+            window.removeEventListener("scroll", handleScroll);
+          };
+        }
+      }, []);
+  
+    const titleStyle = {
+      transform: `translateY(${(scrollPosition / window.innerHeight) * +80}vh) scale(${
+        1 - scrollPosition / (1.5 * window.innerHeight)
+      })`,
+    };
 
     return (
         <>
                 <HeroBehavioural/>
-                <section className="section-box">
+{                <section className="section-box">
                     <div className="banner-hero banner-3 black-bg">
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-md-10">
-                                    <div className="text-center">
-                                        <h1 className="text-display-2 text-white mt-40 mb-30">Behavoiural Analytics</h1>
+                                    <div className="text-center" style={titleStyle}>
+                                        <span>
+                                        <h1 className="text-display-2 text-white mt-40">Behavoiural Analytics</h1>
+                                        </span>
                                         <p className="text-white col-md-6 mx-auto text-center">
                                             Your new clients are making over 30,000 decisions each day. How do you convince 
                                             them that their next best decision includes you?
@@ -78,8 +102,17 @@ function BehvaiouralAnalytics() {
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </section>
+                    <div className="clouds-container">
+                        <Image
+                            src="/assets/imgs/page/behavioural/behavioural-clouds.png"
+                            alt="Clouds"
+                            layout="fill"
+                            className="cloud-image cloud-image-desktop"
+                        />
+                    </div>
+                </section>}
 
                 <section className="section-box mt-100">
                     <div className="container">

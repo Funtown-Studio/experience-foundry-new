@@ -9,7 +9,7 @@ const HeroBehavioural = ({ handleOpen, headerStyle }) => {
 
     useEffect(() => {
         document.addEventListener("scroll", () => {
-            const scrollCheck = window.scrollY > 100
+            const scrollCheck = window.scrollY > 200
             if (scrollCheck !== scroll) {
                 setScroll(scrollCheck)
             }
@@ -83,7 +83,7 @@ const HeroBehavioural = ({ handleOpen, headerStyle }) => {
                         </div>
                     </div>
                 </div>
-                <div style={heroFull}>
+{/*                 <div style={heroFull}>
                     <div className="banner-hero banner-3 black-bg">
                         <div className="container">
                             <div className="text-center">
@@ -103,14 +103,9 @@ const HeroBehavioural = ({ handleOpen, headerStyle }) => {
                             layout="fill"
                             className="cloud-image cloud-image-desktop"
                         />
-                        {/*                         <Image
-                            src="/assets/imgs/page/neuro/cloudneuromobile.png"
-                            alt="Clouds"
-                            layout="fill"
-                            className="cloud-image cloud-image-mobile"
-                        /> */}
+\
                     </div>
-                </div>
+                </div> */}
             </header>
 
         </>

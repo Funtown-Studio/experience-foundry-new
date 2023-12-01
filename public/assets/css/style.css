@@ -3225,7 +3225,6 @@ label {
 }
 
 .banner-hero {
-  padding: 60px 0px 20px 0px;
   position: relative;
 }
 .banner-hero.banner-1 {
@@ -3852,7 +3851,7 @@ label {
 .sticky-bar.stick {
   animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
-  position: fixed;
+  position:sticky;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -9963,4 +9962,15 @@ input.qty-val {
   background-color: white;
   padding: 15px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.top-title {
+  color: white;
+  font-size: 12vmax;
+  letter-spacing: 0.5vmax;
+  position: absolute;
+  top: calc(40% - 6vmax);
+  text-align: center;
+  transform: translateY(var(--moveY)) scale(var(--scale));
+  width: 100%;
 }
