@@ -9614,6 +9614,19 @@ input.qty-val {
 
 .neuro-gradient-bg {
   background: var(--gradient-neuro, linear-gradient(129deg, #FCF3D0 13.21%, #CBCBF9 94.99%));
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  left: 10%;
+}
+
+.neurocontainer {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin-top: 70px;
 }
 
 .neuro-img-main {
@@ -9973,4 +9986,16 @@ input.qty-val {
   text-align: center;
   transform: translateY(var(--moveY)) scale(var(--scale));
   width: 100%;
+}
+
+/* Story Cards */
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: palegoldenrod;
+  border-radius: 10px;
 }

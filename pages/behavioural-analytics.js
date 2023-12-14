@@ -75,11 +75,12 @@ function BehvaiouralAnalytics() {
         }
       }, []);
   
-    const titleStyle = {
-      transform: `translateY(${(scrollPosition / window.innerHeight) * +80}vh) scale(${
-        1 - scrollPosition / (1.5 * window.innerHeight)
-      })`,
-    };
+      const titleStyle = typeof window !== 'undefined' ? {
+        transform: `translateY(${(scrollPosition / window.innerHeight) * +80}vh) scale(${
+          1 - scrollPosition / (1.5 * window.innerHeight)
+        })`,
+      } : {};
+      
 
     return (
         <>
